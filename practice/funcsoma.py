@@ -1,0 +1,15 @@
+def minha_funcao(valor1, valor2):
+    return valor1 + valor2
+
+while True:
+    valor1 = int(input("Valor1: "))
+    valor2 = int(input("Valor2: "))
+
+    resposta = minha_funcao(valor1, valor2)
+
+    print(f"{valor1} + {valor2} = {resposta}")
+
+    continuar = input("Continuar? (s/n): ")
+
+    if continuar.lower() == "n":
+        break
